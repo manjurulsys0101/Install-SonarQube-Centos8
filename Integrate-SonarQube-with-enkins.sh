@@ -72,7 +72,7 @@ pipeline{
         stage('Quality Gate Status Check'){
          steps{
             script{
-                withSonarQubeEnv('sonarqube-police'){
+                withSonarQubeEnv('sonarqube-9.1){
                  sh "mvn sonar:sonar"
                  }
                    }
